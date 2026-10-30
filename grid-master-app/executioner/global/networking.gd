@@ -33,7 +33,7 @@ var _uploading := false
 # ---
 
 ## Client side callback functions
-func connect_to_server(ip: String = "wss://gridmaster-server.calmmeadow-c81c2c38.northeurope.azurecontainerapps.io") -> void:
+func connect_to_server(ip: String = "wss://gridmaster-client.calmmeadow-c81c2c38.northeurope.azurecontainerapps.io") -> void:
 	# Increase inbound buffer so the large game file sent by the server can be received.
 	client_peer.inbound_buffer_size = 10 * 1024 * 1024  # 10 MB
 	var err = client_peer.create_client(ip)
