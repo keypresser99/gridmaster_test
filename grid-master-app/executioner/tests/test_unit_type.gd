@@ -51,5 +51,5 @@ func test_load_cats_and_dogs_game():
 	assert_not_null(game_res, "game_cats_dogs.tres should be loadable")
 	var data_mgr = GameDataManager.initFromGameDefinition(game_res)
 	assert_not_null(data_mgr, "GameDataManager should initialize successfully from game_cats_dogs.tres")
-	assert_eq(data_mgr.game_definition.game_name, "Cats and Dogs")
+	assert_eq(data_mgr.get_game_name(), "Cats and Dogs")
 
