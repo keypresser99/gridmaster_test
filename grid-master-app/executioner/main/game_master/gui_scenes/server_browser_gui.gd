@@ -10,7 +10,7 @@ extends GUIScene
 @onready var _back_button: Button = $BackButton
 
 const SERVERS: Array = [
-	{"ip": "wss://gridmaster-client.calmmeadow-c81c2c38.northeurope.azurecontainerapps.io"},
+	{"ip": "wss://gridmaster-server.calmmeadow-c81c2c38.northeurope.azurecontainerapps.io"},
 	{"ip": "ws://127.0.0.1:8082"},
 	{"ip": "ws://127.0.0.1:443"},
 ]
